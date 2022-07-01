@@ -122,6 +122,7 @@ getOrganismBox <- function(){
         choices =  c( "Human" = "org.Hs.eg.db", 
             "Mouse" = "org.Mm.eg.db", 
             "Rat" = "org.Rn.eg.db", 
+            "Vole" = "org.Microtus_ochrogaster.eg",
             "Zebrafish" = "org.Dr.eg.db",
             "Fly" = "org.Dm.eg.db",
             "Worm" = "org.Ce.eg.db",
@@ -143,11 +144,12 @@ getOrganismBox <- function(){
 #'     x <- getOrganism()
 #'
 getOrganism <- function(org){
-    organisms <-  list("hsa", "mmu", "rno", 
+    organisms <-  list("hsa", "mmu", "rno", "moc",
                       "dre", "dme", "cel", "sce", "At")
     names(organisms) <- c("org.Hs.eg.db", 
                           "org.Mm.eg.db", 
                           "org.Rn.eg.db", 
+                          "org.Microtus_ochrogaster.eg",
                           "org.Dr.eg.db",
                           "org.Dm.eg.db",
                           "org.Ce.eg.db",
@@ -168,11 +170,12 @@ getOrganism <- function(org){
 #'     x <- getOrganismPathway()
 #'
 getOrganismPathway <- function(org){
-    organisms <- list("human", "mouse", "rat", 
+    organisms <- list("human", "mouse", "rat", "vole",
                       "zebrafish", "fly", "celegans", "yeast", "arabidopsis")
     names(organisms) <- c("org.Hs.eg.db", 
                           "org.Mm.eg.db", 
                           "org.Rn.eg.db", 
+                          "org.Microtus_ochrogaster.eg",
                           "org.Dr.eg.db",
                           "org.Dm.eg.db",
                           "org.Ce.eg.db",
